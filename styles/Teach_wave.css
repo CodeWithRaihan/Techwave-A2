@@ -49,7 +49,115 @@
 .threedot_img{
      visibility: hidden;
 }
+/* hero section start form here */
+.banner-container {
+    background-image: url('../assets/hero-bg.png');
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.banner-card-container{
+    
+     margin-top: 50px;
+     margin-bottom: 50px;
+     
+    
+}
+.banner-circle-img{
+     height: 350px;
+     width: 350px;
+}
+.banner-card-fristpart{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+}
+.new-text{
+     
+     width: 70px;
+     height: 35px;
+     color: black;
+     background-color: rgb(0,255,136);
+     border-radius: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     margin-right: -200px;
+     margin-top: -300px;
+}
+.banner-card-fristchild{
+     position: absolute;
+     
+}
+.banner-card-secondpart{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
 
+}
+.banner-title{
+     color: white;
+     font-weight: 800;
+     font-size: 3rem;
+     margin-bottom: 0px;
+
+}
+.banner-sub-title{
+    text-align: center;
+     font-weight: 400;
+     font-size: 1rem;
+     color: white;
+}
+.btn-container{
+     display: flex;
+     gap: 10px;
+}
+.listen-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      height: 44px;
+      width: 200px;
+      padding: 12px 16px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: white;
+      border: none;
+      background: linear-gradient(
+        45deg,
+        rgb(247,233,63),
+        rgb(251,9,180),
+        rgb(145,0,248));
+}
+.listen-btn img{
+     width: 16px;
+     height: 16px;
+}
+.Subscribe-btn{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 5px;
+     border: 2px solid rgba(0, 255, 136, 1);
+     border-radius: 50px;
+     height: 44px;
+     width: 147px;
+     background: transparent;
+     color:rgba(0, 255, 136, 1) ;
+      
+}
+.Subscribe-btn img{
+     width: 16px;
+     height: 16px;
+}
 /* responsive for small device */
 @media screen and (max-width:576px) {
     .nav_bar{
@@ -65,4 +173,31 @@
     .threedot_img{
          visibility: visible;
     }
+
+    /* banner-card-fristpart */
+    
+    .banner-card-container{
+         margin: 40px 20px;
+    }
+    .banner-circle-img{
+         width: 50%;
+         height: 50%;
+    }
+    .banner-microphone-img{
+         width: 50%;
+         height:50%;
+    }
+    .listen-btn{
+         width: 150px;
+         font-size: 1rem;
+         gap: 2px;
+    }
+    .new-text{
+     
+     margin-right: -100px;
+     margin-top: -150px;
+   }
+   .banner-card-fristchild{
+     margin-left: 50px;
+   }
 }
