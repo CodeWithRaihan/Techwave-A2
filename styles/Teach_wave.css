@@ -212,19 +212,33 @@ body{
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      background-color: rgb(35,14,61);
 }
 .card_layout{
       width: 1200px;
       height: 776px;
       display: grid;
-      grid-template-columns: repeat(5, 200px);
-      grid-template-rows: repeat(3, 150px);
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 100px);
       gap: 30px;
+      justify-content: center;
+      
      
+}
+.card_one{ 
+       
+}
+.card_two{
+      
+      
+
 }
 .card_box{
       border: 2px solid white;
-      padding: 40px;
+      background-color: rgb(47, 12, 94);
+      border-radius: 40px;
+      padding: 40px; 
+      
       
 }
 .card_box h4{
@@ -237,19 +251,19 @@ body{
 }
 .long_layout{
       grid-column: span 2;
-      grid-row: span 2;
+      grid-row: span 4;
 }
 .wide_layout{
       grid-column: span 3;
-      grid-row:  span 1;
+      grid-row:  span 2;
 }
 .sami_long_layout{
       grid-column: span 3;
-      grid-row: span 1;
+      grid-row: span 2;
 }
 .mini_layout{
       grid-column: span 2;
-      grid-row: span 1;
+      grid-row: span 2;
 }
 /* responsive for small device */
 @media screen and (max-width:576px) {
